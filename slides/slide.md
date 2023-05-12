@@ -23,7 +23,7 @@ h2 {
 }
 </style>
 # <!-- fit --> 基于SpringBoot的‘亭好住‘房屋租赁系统设计与实现
-## 演讲人：方浩冉
+## 汇报人：方浩冉
 
 ---
 ## 研究现状
@@ -55,7 +55,7 @@ h2 {
 ## 系统设计
 ---
 
-![width:1000px](../screenshot/houserental_system.png)
+![bg fit](../screenshot/houserental_system.png)
 
 ---
 ## 架构设计
@@ -91,7 +91,7 @@ h2 {
 ---
 ## 系统实现
 - [jenkins server](http://1.15.89.130:8080/)
-- [后台管理系统](3.60.78.147)
+- [后台管理系统](123.60.78.147)
 - 源代码
   - [backend](https://gitee.com/horaoen/hourserental)
   - [frontend_admin](https://github.com/horaoen/thz_house_rental_admin)
@@ -133,6 +133,27 @@ react router v6 配合状态管理工具recoil实现前端路由系统
    3. 如果没有则重定向到登陆页
 ---
 ## 后端权限系统
+- [Authentication 和 Authorization](https://learnku.com/articles/3869/one-minute-to-clear-authentication-and-authorization)
+- [Spring Security](https://docs.spring.io/spring-security/reference/index.html)
+- [JSON Web Token 入门教程](https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
+---
+<style scoped>
+section {
+  font-size: 27px;
+}
+</style>
+1. 解析前端传递的token
+2. 根据token信息获取userId从数据库中获取到用户详情信息放入SpringSecurityContext中
+3. 需要Authentication的接口若无法从SpringSecurityContext中获取到用户的用户名密码token(UsernamePasswordAuthenticationToken), 则会访问失败
+4. 需要Authorization的接口若UsernamePasswordAuthenticationToken中无限定权限则会反问失败
+   - eg: 当在接口上添加注释@PreAuthorize("hasRole('ADMIN')")时, 若在UsernamePasswordAuthenticationToken中无admin角色权限，则会反问失败
+   
+---
+![bg 70%](../screenshot/filterChain_code.png)
+---
+---
+![bg 85%](../screenshot/backend_login_filter_code.png)
+---
 ---
 <style scoped> 
 h1 {

@@ -91,7 +91,7 @@ h2 {
 ---
 ## 系统实现
 - [jenkins server](http://1.15.89.130:8080/)
-- [后台管理系统](123.60.78.147)
+- [后台管理系统](http://123.60.78.147/)
 - 源代码
   - [backend](https://gitee.com/horaoen/hourserental)
   - [frontend_admin](https://github.com/horaoen/thz_house_rental_admin)

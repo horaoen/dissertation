@@ -27,8 +27,11 @@ h2 {
 
 ---
 ## 研究现状
----
-
+<style scoped>
+section {
+  padding: 140px;
+}
+</style>
 - 城市化加速，房屋租赁市场不可或缺
 - 由于各地区的租房需求和市场情况不同，租房信息的精确度和及时性有待提高
 - 平台提供的房源信息质量参差不齐，无法满足租房者和房东对房源信息的准确需求
@@ -37,9 +40,12 @@ h2 {
 - 平台的租房流程和服务标准不够统一和规范，导致用户体验不佳
 
 ---
+<style scoped>
+h2 {
+  margin-bottom: 70px;
+}
+</style>
 ## 选题意义
----
-
 - 有利于促进行业的信息化和智能化发展
 - 提高租赁服务的质量和效率
 - 为租户和房东提供更便捷的服务
@@ -56,6 +62,25 @@ h2 {
 ---
 
 ![width:830px](../screenshot/houserental_arch.png)
+
+---
+<style scoped>
+section {
+  font-size: 25px;
+}
+h2 { 
+  font-size: 70px;
+}
+</style>
+## 相关技术
+1. [SpringBoot](https://spring.io/projects/spring-boot) 后端框架
+2. [React](https://react.dev/) 后台前端框架
+3. [uni-app](https://zh.uniapp.dcloud.io/) 小程序框架
+4. [Mybatis-Plus](https://www.baomidou.com/pages/24112f/#%E7%89%B9%E6%80%A7) 后端ORM框架
+5. [React Route](https://reactrouter.com/en/main) 前端路由框架
+6. [Recoil](https://recoiljs.org/docs/introduction/installation) 一个功能类似Redux的状态管理工具
+7. [Ant design](https://ant.design/components/overview-cn/)前端组件库
+
 
 ---
 ## 数据库设计
@@ -108,3 +133,12 @@ react router v6 配合状态管理工具recoil实现前端路由系统
    3. 如果没有则重定向到登陆页
 ---
 ## 后端权限系统
+---
+<style scoped> 
+h1 {
+  font-size: 60px;
+}
+</style>
+# 感谢您的倾听
+- 指导教师：程辉
+- 汇报人：方浩冉

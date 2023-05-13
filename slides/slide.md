@@ -95,7 +95,7 @@ h2 {
 - 源代码
   - [backend](https://gitee.com/horaoen/hourserental)
   - [frontend_admin](https://github.com/horaoen/thz_house_rental_admin)
-  - [weichat_app](www.baidu.com)
+  - [weichat_app](https://github.com/horaoen/lease-of-houses)
   - [论文](https://github.com/horaoen/dissertation)
 ---
 ### CI/CD环境搭建
@@ -114,7 +114,7 @@ h2 {
 ---
 ---
 [X Spring File Storage](https://github.com/1171736840/spring-file-storage)
-<font size="6">springboot中跨平台地将文件存储到云存储服务中</font>
+springboot中跨平台地将文件存储到云存储服务中
 ---
 ---
 ## 后台管理系统路由系统搭建
@@ -131,6 +131,15 @@ react router v6 配合状态管理工具recoil实现前端路由系统
    1. 从状态管理中获取token如果有则通过是私有路由
    2. 若没有尝试冲localStorage中获取token如果有则将token放入到状态管理中并通过私有路由
    3. 如果没有则重定向到登陆页
+
+---
+![bg left fit](../screenshot/private_route_code.png)
+私有路由核心代码
+---
+---
+![bg right fit](../screenshot/route_config_code.png)
+全局路由配置
+---
 ---
 ## 后端权限系统
 - [Authentication 和 Authorization](https://learnku.com/articles/3869/one-minute-to-clear-authentication-and-authorization)
